@@ -20,7 +20,7 @@ npm i node-sass --force
 1. [fixed] switch from old router to new router in index.js (pages directory)
 
 FROM THIS
-```
+```jsx
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Me from './Me';
@@ -52,7 +52,7 @@ const Pages = ({ user }) => {
 export default Pages
 ```
 TO THIS
-```
+```jsx
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Me from './Me';
@@ -73,34 +73,31 @@ const Pages = ({ user }) => {
     )
 }
 export default Pages
-
 ```
 
 2. [fixed] change icons name in MobileNav.js (remove 32) & UserHeader.js (remove 16)
 
 FROM THIS
-```
+```jsx
 // MobileNav.js
 
 import { User32, Code32, Portfolio32, Education32 } from '@carbon/icons-react'
 ```
 TO THIS
-```
+```jsx
 // MobileNav.js
 
 import { User, Code, Portfolio, Education } from '@carbon/icons-react'
 ```
 FROM THIS
-```
+```jsx
 // UserHeader.js
 
 import { ArrowRight16 } from '@carbon/icons-react'
-
 ```
 TO THIS
-```
+```jsx
 // UserHeader.js
 
 import { ArrowRight } from '@carbon/icons-react'
-
 ```
